@@ -1,1 +1,3 @@
-# hier der test nr 6
+erst git add *
+dann git commit -m "blubber"
+dann git push origin master
