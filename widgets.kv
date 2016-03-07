@@ -1,0 +1,36 @@
+<Widget>:
+    canvas.after:
+        Line:
+#            rectangle: self.x+1,self.y+1,self.width-1,self.height-1
+#            dash_offset: 5
+#            dash_length: 3
+<MyWidget>:
+    Label:
+        id: hsLabel
+        pos: 0, 350
+        size: 800,100
+        border: 1
+        font_size: 60
+        text: "Fotobox ... 2.0"
+    Button:
+        id: hsButton
+        pos: 0, 50
+        size: 800, 250
+        font_size: 45
+        text: "Hier drücken und \nlos geht's..."
+        on_press: root.hsInit()
+    Label: 
+        id: hsCountdown
+        pos: 0, 0
+        size: 800,480
+        font_size: 454
+        text: ""
+    Label:
+        id: hsDebug1
+#        font_size: 12
+        text_size: self.size
+        size: 800,50
+        text: "Debug: "
+        halign: "left"
+        valign: "top"
+
